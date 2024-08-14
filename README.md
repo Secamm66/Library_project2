@@ -1,6 +1,6 @@
-# Library_project2
+﻿# Library_project2
 Этот проект представляет собой учебное приложение,
-написанное на Java 21 с использованием Hibernate, Spring Data JPA и Apache Tomcat 9 для развертывания.
+написанное на Java 8 с использованием Spring MVC, Spring Data JPA, Hibernate и Apache Tomcat 9 для развертывания.
 
 Задачи:
 1) Переписать Library_project с использованием Hibernate и Spring Data JPA. В вашем
@@ -24,23 +24,18 @@
 Установка и запуск проекта:
 
 1) Для работы с проектом потребуются следующие инструменты:
-   - Java 21
+   - Java 8
    - PostgreSQL 10
    - Apache Tomcat 9
    - IntelliJ IDEA (или другая среда разработки)
 
-
 2) Клонируйте репозиторий на вашу локальную машину:
-
-   git clone https://github.com/Secamm66/Library_project.git
-
+   git clone https://github.com/Secamm66/Library_project2.git
 
 3) Установите PostgreSQL 10 и создайте новую базу данных:
-
    - CREATE DATABASE library_db
    - Создайте таблицы, используя код из файла src/main/sql/library_db.sql
    - Настройте подключение к базе данных в файле src/main/resources/hibernate.properties, заменив значения на ваши собственные
-
 
 4) Настройте Apache Tomcat 9:
    - Скачайте и установите Apache Tomcat 9 с официального сайта https://tomcat.apache.org
@@ -52,9 +47,8 @@
    - Нажмите + и выберите Tomcat Server -> Local
    - Выберите ранее добавленный Tomcat и укажите ваш проект как артефакт для деплоя
 
-
 5) Откройте и запустите проект в IntelliJ IDEA:
-   - Убедитесь, что все зависимости и библиотеки установлены корректно (например, для работы с JDBC и PostgreSQL)
+   - Убедитесь, что все зависимости и библиотеки установлены корректно (например, для работы с Hibernate и PostgreSQL)
    - Настройте конфигурацию для запуска проекта на Tomcat, как указано в пункте 4
    - Убедитесь, что сервер PostgreSQL запущен
    - Запустите сервер Apache Tomcat из IntelliJ IDEA через созданную конфигурацию
